@@ -1,0 +1,9 @@
+<div *ngIf="resource" class="resource-details">
+  <h2>{{ resource.title }}</h2>
+  <p>{{ resource.description }}</p>
+  <p><strong>Category:</strong> {{ resource.category }}</p>
+  <p><strong>Author:</strong> {{ resource.author }}</p>
+  <p><strong>Published on:</strong> {{ resource.publicationDate }}</p>
+  <a [href]="resource.url" target="_blank">Read More</a>
+  <button (click)="resource = undefined">Back to List</button>
+</div>
