@@ -1,0 +1,79 @@
+/* styles.css or about.component.css */
+
+/* Base styles for the about container */
+.about-container {
+    max-width: 800px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding around the container */
+}
+
+/* Heading styles */
+.about-container h2 {
+    font-size: 2.5em; /* Font size for main heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.about-container h3 {
+    font-size: 1.8em; /* Font size for subheadings */
+    margin-top: 20px; /* Space above subheadings */
+    margin-bottom: 10px; /* Space below subheadings */
+}
+
+/* Paragraph styles */
+.about-container p {
+    line-height: 1.6; /* Improved readability */
+    margin-bottom: 15px; /* Space below paragraphs */
+}
+
+/* List styles */
+.about-container ul {
+    list-style-type: disc; /* Bulleted list */
+    margin-left: 20px; /* Indent the list */
+}
+
+/* Link styles */
+.about-container a {
+    color: #4CAF50; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.about-container a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .about-container h2 {
+        font-size: 2em; /* Adjust heading size for smaller screens */
+    }
+
+    .about-container h3 {
+        font-size: 1.5em; /* Adjust subheading size for smaller screens */
+    }
+
+    .about-container p {
+        font-size: 1em; /* Adjust paragraph size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-container {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .about-container h2 {
+        font-size: 1.5em; /* Further adjust heading size */
+    }
+
+    .about-container h3 {
+        font-size: 1.2em; /* Further adjust subheading size */
+    }
+
+    .about-container p {
+        font-size: 0.9em; /* Further adjust paragraph size */
+    }
+}

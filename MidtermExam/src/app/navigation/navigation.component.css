@@ -1,50 +1,69 @@
+/* styles.css or navigation.component.css */
+
+/* Base styles for the navigation */
 .navigation {
-    background-color: #333; /* Background color for the navigation */
-  }
-  
+  background-color: #333; /* Dark background color */
+}
+
+.navigation ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Space items evenly */
+}
+
+.navigation li {
+  position: relative; /* Position for dropdown */
+}
+
+.navigation a {
+  display: block; /* Make links block elements */
+  color: white; /* Text color */
+  padding: 14px 20px; /* Padding for links */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Dropdown styles */
+.dropdown-content {
+  display: none; /* Hide dropdown by default */
+  position: absolute; /* Position dropdown */
+  background-color: #f9f9f9; /* Light background for dropdown */
+  min-width: 160px; /* Minimum width for dropdown */
+  z-index: 1; /* Ensure dropdown is above other content */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content a {
+  color: black; /* Text color for dropdown links */
+  padding: 12px 16px; /* Padding for dropdown links */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Make dropdown links block elements */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
   .navigation ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: flex-start; /* Align items to the start */
   }
-  
-  .navigation li {
-    position: relative; /* Position relative for dropdown */
-    margin: 0 15px; /* Space between menu items */
-  }
-  
+
   .navigation a {
-    color: white; /* Text color */
-    text-decoration: none; /* Remove underline */
-    padding: 10px 15px; /* Padding for clickable area */
+      padding: 10px; /* Reduce padding on smaller screens */
+      text-align: left; /* Align text to the left */
+      width: 100%; /* Full width for links */
   }
-  
-  .navigation a:hover {
-    background-color: #575757; /* Background color on hover */
-    border-radius: 5px; /* Rounded corners on hover */
-  }
-  
-  /* Dropdown styles */
+
   .dropdown-content {
-    display: none; /* Hide dropdown by default */
-    position: absolute; /* Position it below the dropdown link */
-    background-color: #f9f9f9; /* Background color for dropdown */
-    min-width: 160px; /* Minimum width of dropdown */
-    z-index: 1; /* Ensure it appears above other content */
+      position: static; /* Change dropdown position */
   }
-  
-  .dropdown:hover .dropdown-content {
-    display: block; /* Show dropdown on hover */
+}
+
+@media (max-width: 480px) {
+  .navigation a {
+      padding: 8px; /* Further reduce padding */
   }
-  
-  .dropdown-content a {
-    color: black; /* Text color for dropdown items */
-    padding: 12px 16px; /* Padding for dropdown items */
-    text-decoration: none; /* Remove underline */
-    display: block; /* Make dropdown items block elements */
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #f1f1f1; /* Background color on hover for dropdown items */
-  }
+}
