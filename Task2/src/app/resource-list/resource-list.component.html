@@ -1,0 +1,10 @@
+<div class="resource-list">
+  <div *ngFor="let resource of resources" class="resource-card">
+    <h3>{{ resource.title }}</h3>
+    <p>{{ resource.description }}</p>
+    <span class="category">{{ resource.category }}</span>
+    <button (click)="selectResource(resource)">View Details</button>
+  </div>
+</div>
+
+<app-resource-details *ngIf="selectedResource" [resource]="selectedResource"></app-resource-details>
