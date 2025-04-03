@@ -1,0 +1,37 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50; /* Change to your preferred color */
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .logo img {
+    height: 40px; /* Adjust logo size */
+  }
+  
+  .title h1 {
+    margin: 0;
+    font-size: 24px; /* Adjust title size */
+  }
+  
+  .navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navigation li {
+    margin-left: 20px; /* Space between menu items */
+  }
+  
+  .navigation a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navigation a:hover {
+    text-decoration: underline; /* Add hover effect */
+  }
