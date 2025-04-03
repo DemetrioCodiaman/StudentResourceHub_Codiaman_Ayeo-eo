@@ -1,88 +1,122 @@
+/* styles.css or home.component.css */
+
+/* Base styles for the home container */
 .home-container {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-  }
-  
-  .home-header {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
+  max-width: 1200px; /* Maximum width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Padding around the container */
+}
+
+/* Header styles */
+.home-header {
+  text-align: center; /* Center text */
+  margin-bottom: 40px; /* Space below the header */
+}
+
+.home-header h1 {
+  font-size: 2.5em; /* Base font size for the main heading */
+}
+
+.home-header p {
+  font-size: 1.2em; /* Base font size for the paragraph */
+}
+
+/* Featured resources styles */
+.featured-resources {
+  margin-bottom: 40px; /* Space below the featured resources section */
+}
+
+.featured-resources h2 {
+  font-size: 2em; /* Font size for the section heading */
+  margin-bottom: 20px; /* Space below the section heading */
+}
+
+.resource-card {
+  background-color: #f9f9f9; /* Light background for resource cards */
+  border: 1px solid #ddd; /* Border for resource cards */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside the card */
+  margin-bottom: 20px; /* Space below each card */
+  transition: box-shadow 0.3s; /* Transition for hover effect */
+}
+
+.resource-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow on hover */
+}
+
+.resource-link {
+  display: inline-block; /* Make link a block element */
+  margin-top: 10px; /* Space above the link */
+  padding: 10px 15px; /* Padding for the link */
+  background-color: #4CAF50; /* Button background color */
+  color: white; /* Button text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners for button */
+}
+
+/* Call to action styles */
+.call-to-action {
+  text-align: center; /* Center text */
+}
+
+.call-to-action h2 {
+  font-size: 2em; /* Font size for the section heading */
+  margin-bottom: 20px; /* Space below the section heading */
+}
+
+.call-to-action .cta-button {
+  display: inline-block; /* Make button a block element */
+  padding: 10px 20px; /* Padding for the button */
+  background-color: #4CAF50; /* Button background color */
+  color: white; /* Button text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners for button */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
   .home-header h1 {
-    font-size: 2.5em;
-    color: #333;
+      font-size: 2em; /* Adjust heading size for smaller screens */
   }
-  
+
   .home-header p {
-    font-size: 1.2em;
-    color: #666;
+      font-size: 1em; /* Adjust paragraph size for smaller screens */
   }
-  
-  .featured-resources {
-    margin-bottom: 40px;
-  }
-  
-  .featured-resources h2 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
+
   .resource-card {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
+      padding: 15px; /* Reduce padding in resource cards */
   }
-  
+
   .resource-card h3 {
-    font-size: 1.5em;
-    color: #007bff;
+      font-size: 1.5em; /* Adjust resource card heading size */
   }
-  
-  .resource-card p {
-    color: #555;
-  }
-  
-  .resource-link {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  .resource-link:hover {
-    background-color: #0056b3;
-  }
-  
-  .call-to-action {
-    text-align: center;
-    margin-top: 40px;
-  }
-  
+
+  .featured-resources h2,
   .call-to-action h2 {
-    font-size: 2em;
-    color: #333;
+      font-size: 1.5em; /* Adjust section heading size */
   }
-  
-  .call-to-action p {
-    color: #666;
-    margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  .home-header h1 {
+      font-size: 1.5em; /* Further adjust heading size */
   }
-  
+
+  .home-header p {
+      font-size: 0.9em; /* Further adjust paragraph size */
+  }
+
+  .resource-card {
+      margin-bottom: 15px; /* Reduce space between cards */
+  }
+
+  .resource-card h3 {
+      font-size: 1.2em; /* Further adjust resource card heading size */
+  }
+
+  .resource-link,
   .cta-button {
-    padding: 10px 20px;
-    background-color: #28a745;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+      padding: 8px 12px; /* Adjust button padding */
+      font-size: 0.9em; /* Adjust button font size */
   }
-  
-  .cta-button:hover {
-    background-color: #218838;
-  }
+}

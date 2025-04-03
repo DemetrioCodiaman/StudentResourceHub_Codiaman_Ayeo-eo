@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './add-resources.component.css'
 })
 export class AddResourcesComponent {
+onSubmit() {
+throw new Error('Method not implemented.');
+}
 
 }

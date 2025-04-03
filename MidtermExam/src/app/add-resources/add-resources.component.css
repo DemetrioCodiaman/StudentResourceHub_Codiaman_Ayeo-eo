@@ -1,0 +1,123 @@
+/* styles.css or add-resources.component.css */
+
+/* Base styles for the add resources container */
+.add-resources-container {
+    max-width: 800px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding around the container */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Heading styles */
+.add-resources-container h2 {
+    font-size: 2.5em; /* Font size for main heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.add-resources-container h3 {
+    font-size: 1.8em; /* Font size for subheadings */
+    margin-top: 20px; /* Space above subheadings */
+    margin-bottom: 10px; /* Space below subheadings */
+}
+
+/* Paragraph styles */
+.add-resources-container p {
+    line-height: 1.6; /* Improved readability */
+    margin-bottom: 15px; /* Space below paragraphs */
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 15px; /* Space below each form group */
+}
+
+label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+input[type="text"],
+input[type="url"],
+textarea,
+select {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+/* Button styles */
+button {
+    background-color: #4CAF50; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 15px; /* Padding for button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Font size for button */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+/* List styles */
+.add-resources-container ul {
+    list-style-type: disc; /* Bulleted list */
+    margin-left: 20px; /* Indent the list */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .add-resources-container {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .add-resources-container h2 {
+        font-size: 2em; /* Adjust heading size for smaller screens */
+    }
+
+    .add-resources-container h3 {
+        font-size: 1.5em; /* Adjust subheading size for smaller screens */
+    }
+
+    input[type="text"],
+    input[type="url"],
+    textarea,
+    select {
+        padding: 8px; /* Reduce padding in inputs */
+    }
+
+    button {
+        padding: 8px 12px; /* Adjust button padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .add-resources-container {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .add-resources-container h2 {
+        font-size: 1.5em; /* Further adjust heading size */
+    }
+
+    .add-resources-container h3 {
+        font-size: 1.2em; /* Further adjust subheading size */
+    }
+
+    input[type="text"],
+    input[type="url"],
+    textarea,
+    select {
+        font-size: 0.9em; /* Adjust font size for inputs */
+    }
+
+    button {
+        padding: 6px 10px; /* Further adjust button padding */
+        font-size: 0.9em; /* Adjust button font size */
+    }
+}

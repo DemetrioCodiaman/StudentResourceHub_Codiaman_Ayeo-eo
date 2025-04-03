@@ -1,19 +1,32 @@
+/* styles.css or footer.component.css */
+
+/* Base styles for the footer */
 .footer {
-    display: flex;
-    justify-content: space-between; /* Space between copyright and team members */
-    align-items: center; /* Center items vertically */
-    background-color: #333; /* Background color for the footer */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding for the footer */
-    position: relative; /* Position relative for layout */
-    bottom: 0; /* Stick to the bottom */
-    width: 100%; /* Full width */
+  background-color: #333; /* Dark background color */
+  color: white; /* Text color */
+  padding: 20px; /* Padding around the footer */
+  text-align: center; /* Center text */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footer {
+      padding: 15px; /* Reduce padding on smaller screens */
   }
-  
-  .copyright {
-    margin: 0; /* Remove margin */
-  }
-  
+
+  .copyright,
   .team {
-    margin: 0; /* Remove margin */
+      font-size: 0.9em; /* Slightly reduce font size */
   }
+}
+
+@media (max-width: 480px) {
+  .footer {
+      padding: 10px; /* Further reduce padding */
+  }
+
+  .copyright,
+  .team {
+      font-size: 0.8em; /* Further reduce font size */
+  }
+}
