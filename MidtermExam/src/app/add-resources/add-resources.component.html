@@ -1,0 +1,43 @@
+
+<div class="add-resources-container">
+    <h2>Add a New Resource</h2>
+    <p>We welcome contributions from students! If you have a resource that you believe will help others, please fill out the form below to submit it for review.</p>
+
+    <form (ngSubmit)="onSubmit()" >
+        <div class="form-group">
+            <label for="title">Resource Title:</label>
+            <input type="text" id="title" name="title" ngModel required>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" ngModel required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="link">Resource Link:</label>
+            <input type="url" id="link" name="link" ngModel required>
+        </div>
+
+        <div class="form-group">
+            <label for="category">Category:</label>
+            <select id="category" name="category" ngModel required>
+                <option value="" disabled selected>Select a category</option>
+                <option value="study-materials">Study Materials</option>
+                <option value="articles">Articles</option>
+                <option value="tools">Tools</option>
+                <option value="workshops">Workshops</option>
+            </select>
+        </div>
+
+        <button type="submit">Submit Resource</button>
+    </form>
+
+    <h3>Guidelines for Submission</h3>
+    <ul>
+        <li>Ensure that the resource is relevant and beneficial to students.</li>
+        <li>Provide accurate and complete information.</li>
+        <li>All submissions will be reviewed before being published.</li>
+        <li>By submitting, you agree to allow us to share the resource on our platform.</li>
+    </ul>
+</div>

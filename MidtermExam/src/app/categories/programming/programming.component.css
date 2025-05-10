@@ -1,0 +1,54 @@
+/* styles.css or individual component CSS files */
+
+/* Common styles for all category components */
+.programming-container,
+.design-container,
+.math-container {
+    max-width: 800px; /* Maximum width of the container */
+    margin: 20px auto; /* Center the container with margin */
+    padding: 20px; /* Padding inside the container */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .programming-container,
+    .design-container,
+    .math-container {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust heading size */
+    }
+
+    h3 {
+        font-size: 1.2em; /* Adjust subheading size */
+    }
+
+    ul {
+        padding-left: 15px; /* Adjust list padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .programming-container,
+    .design-container,
+    .math-container {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    h2 {
+        font-size: 1.3em; /* Further adjust heading size */
+    }
+
+    h3 {
+        font-size: 1.1em; /* Further adjust subheading size */
+    }
+
+    p {
+        font-size: 0.9em; /* Adjust paragraph font size */
+    }
+}
